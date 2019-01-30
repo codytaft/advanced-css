@@ -1,3 +1,7 @@
+$color-primary: #7ed56f;
+$color-primary-light: #55c57a;
+$color-primary-dark: #28b485;
+
 *,
 *::after,
 *::before {
@@ -23,13 +27,14 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(85, 197, 122, 0.8),
-      rgba(40, 180, 133, 0.8)
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
+
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -54,6 +59,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
@@ -63,9 +69,11 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+
   /* animation-iteration-count: 3;
   animation-delay: 3s; */
 }
@@ -75,6 +83,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
+
   animation: moveInRight 1s ease-out;
 }
 
@@ -83,9 +92,11 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   80% {
     transform: translateX(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -97,9 +108,11 @@ body {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   80% {
     transform: translateX(-1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -111,6 +124,7 @@ body {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
