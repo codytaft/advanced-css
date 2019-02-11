@@ -16,18 +16,14 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
-  };
+  }
 
   &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include centerHorizontalVertical;
     text-align: center;
-  };
+  }
 
   &__logo {
     height: 2.5rem;
-
   }
 }
